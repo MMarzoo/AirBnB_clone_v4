@@ -99,3 +99,48 @@
 .user {
   margin-bottom: 1.5%;
 }
+
+
+/* reviews styles */
+.places div.reviews ul {
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+.places div.reviews li {
+    margin-bottom: 20px;
+}
+.places div.reviews li h3 {
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.places div.reviews li p {
+    margin: 0;
+    font-size: 12px;
+}
+.places div.reviews h2 {
+    font-size: 16px;
+    border-bottom: 1px solid #DDDDDD;
+    margin: 0;
+    padding-bottom: 10px;
+    width: 100%;
+    text-align: left;
+}
+.places article div.reviews {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.showtoggle {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 280px;
+    text-decoration: underline;
+    color: #FF5A5F;
+}
