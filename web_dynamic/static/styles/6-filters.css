@@ -41,6 +41,22 @@ button:hover {
     font-weight: 400;
     font-size: 14px;
 }
+
+.filters div.amenities h4 {
+    height: 15px;
+    width: 250px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.filters div.locations h4 {
+    height: 15px;
+    width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
 .locations {
     height: 100%;
     width: 25%;
@@ -92,6 +108,7 @@ button:hover {
 }
 
 .popover ul h2{
+    display: inline;
     margin-top: 1.5%;
     margin-bottom: 5%;
     margin-left: 0px;
@@ -100,4 +117,8 @@ button:hover {
 .amenities:hover .popover,
 .locations:hover .popover {
     visibility: visible;
+}
+
+#am_check, #state_check, #city_check {
+    margin-right: 10px;
 }
