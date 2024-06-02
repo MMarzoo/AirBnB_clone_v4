@@ -8,7 +8,7 @@ $(document).ready(function () {
     }
     $('.amenities H4').text(Object.values(checkedAmenities).join(', '));
   });
-  $.get('http://0.0.0.0:5001/api/v1/status/', function (data, status) {
+  $.get('http://127.0.0.1:5001/api/v1/status/', function (data, status) {
     if (data.status === 'OK') {
       $('div#api_status').addClass('available');
     } else {
@@ -17,7 +17,7 @@ $(document).ready(function () {
   });
   $.ajax({
     type: 'POST',
-    url: 'http://0.0.0.0:5001/api/v1/places_search',
+    url: 'http://127.0.0.1:5001/api/v1/places_search',
     data: '{}',
     headers: {
       'Content-Type': 'application/json'
@@ -56,7 +56,7 @@ $(document).ready(function () {
     }
     $.ajax({
       type: 'POST',
-      url: 'http://0.0.0.0:5001/api/v1/places_search',
+      url: 'http://127.0.0.1:5001/api/v1/places_search',
       data: '{}',
       headers: {
         'Content-Type': 'application/json'
